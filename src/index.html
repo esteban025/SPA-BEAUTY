@@ -5,97 +5,112 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Spa & Beauty | Proyecto CSS - Academía Conquer Bloks</title>
   <meta name="description" content="We provide you various treatments from head to toe using the best product, advanced technology, and affordable price">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
-  <header>
+  <header class="header-page">
     <div class="logo">
-      <a href="#"><span>Glow</span>Queen</a>
+      <a href="#" class="link-logo"><span>Glow</span>Queen</a>
     </div>
-    <nav>
-      <ul>
+    <nav class="header-nav">
+      <ul class="list-nav">
         <a href="#">Home</a>
         <a href="#">About</a>
         <a href="#">Services</a>
         <a href="#">Facilities</a>
-        <a href="#">More <img src="" alt="Arrow down"></a>
+        <a href="#">More <img src="../icons/arrow-down.svg" alt="Arrow down"></a>
       </ul>
     </nav>
-    <aside>
-      <ul>
+    <aside class="header-aside">
+      <ul class="list-aside">
         <li>
-
-          <button>
-            <img src="" alt="Icono Serch">
+          <button class="btn-search">
+            <img src="../icons/search.svg" alt="Icono Search">
           </button>
         </li>
         <li>
-          <button>
-            <img src="" alt="Icono Store">
+          <button class="btn-store">
+            <img src="../icons/store.svg" alt="Icono Store">
           </button>
         </li>
-        <li><button>Sign In</button></li>
-        <li><button>Sign Up</button></li>
+        <li><button class="btn-sign-in">Sign In</button></li>
+        <li><button class="btn-sign-up">Sign Up</button></li>
       </ul>
     </aside>
   </header>
+
   <main>
     <!-- HERO -->
-    <section>
-      <article>
-        <h1>Bring back the beauty and glow of your skin</h1>
-        <p>We provide you various treatments from head to toe using the best product, advanced technology, and affordable price</p>
-        <div class="buttons">
-          <button>Book Now</button>
-          <button>
+    <div class="background">
+      <div class="gray"></div>
+      <div class="blue">
+        <img src="../images/transparent-bg.webp" alt="Imagen que no se que es">
+      </div>
+      <div class="white"></div>
+    </div>
+    
+    <section class="container-information">
+      <section class="content-info">
+        <article>
+          <h1>Bring back the beauty and glow of your skin</h1>
+          <p>We provide you various treatments from head to toe using the best product, advanced technology, and affordable price</p>
+          <div class="buttons">
+            <button class="btn-primary btn">Book Now</button>
+            <button class="btn">
+              <figure>
+                <img src="../icons/play.svg" alt="Icon - play">
+              </figure>
+              <span>Watch Video</span>
+            </button>
+          </div>
+        </article>
+
+        <!-- ESPECIALIDADES -->
+        <section class="specialties">
+          <article>
             <figure>
-              <img src="" alt="">
+              <img src="../images/special-queen.webp" alt="Icono - Special Treatment">
             </figure>
-            <span>Watch Video</span>
-          </button>
-        </div>
-      </article>
+            <span>15+</span>
+            <p>Specia Treatment</p>
+          </article>
 
-      <!-- ESPECIALIDADES -->
-      <section>
-        <article>
-          <figure>
-            <img src="" alt="Icono - Special Treatment">
-          </figure>
-          <span>15+</span>
-          <p>Special Treatment</p>
-        </article>
+          <article>
+            <figure>
+              <img src="../images/professional-queen.webp" alt="Icono - Professional Therapist">
+            </figure>
+            <span>25+</span>
+            <p>Professional Therapist</p>
+          </article>
 
-        <article>
-          <figure>
-            <img src="" alt="Icono - Professional Therapist">
-          </figure>
-          <span>25+</span>
-          <p>Professional Therapist</p>
-        </article>
-
-        <article>
-          <figure>
-            <img src="" alt="Icono - Herbal Cream Formula">
-          </figure>
-          <span>100%</span>
-          <p>Herbal Cream Formula</p>
-        </article>
+          <article>
+            <figure>
+              <img src="../images/herbal-queen.webp" alt="Icono - Herbal Cream Formula">
+            </figure>
+            <span>100%</span>
+            <p>Herbal Cream Formula</p>
+          </article>
+        </section>
       </section>
 
-      <!-- CARDS COMMETS -->
-      <section>
-        <article>
-          <img src="" alt="Icono de comillas">
-          <p>For the past few years, I've had a hard time finding the right place for skin care to deal with my complicated skin condition, thank God I found GlowQueen to treat my skin</p>
-          <address>Tamara Jules</address>
-        </article>
-        
-        <article>
-          <img src="" alt="Icono de comillas">
-          <p>I have a regular schedule to take treatment from GlowQueen, they gave me the best service and treatment ever to maintain the beauty and health of my skin</p>
-          <address>Sophia Princeton</address>
-        </article>
+      <!-- CARDS COMMETS & WOMAN -->
+      <section class="content-secondary-info">
+        <figure class="content-skin-woman">
+          <img src="../images/skin-woman-bg.webp" alt="skin-woman-bg">
+        </figure>
+        <div class="content-comments">
+          <article>
+            <img src="../icons/quotation-marks.svg" alt="Icon - quotation-marks">
+            <p>For the past few years, I've had a hard time finding the right place for skin care to deal with my complicated skin condition, thank God I found GlowQueen to treat my skin</p>
+            <address>Tamara Jules</address>
+          </article>
+          
+          <article>
+            <img src="../icons/quotation-marks.svg" alt="Icon - quotation-marks">
+            <p>I have a regular schedule to take treatment from GlowQueen, they gave me the best service and treatment ever to maintain the beauty and health of my skin</p>
+            <address>Sophia Princeton</address>
+          </article>
+        </div>
       </section>
     </section>
   </main>
